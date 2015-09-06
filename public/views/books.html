@@ -1,0 +1,9 @@
+<h1>All Books</h1>
+
+<ul class="list-group row">
+	<li class="list-group-item col-sm-4" ng-repeat="b in book.books">
+		<h3>Name: <a ng-href="#/books/{{b.id}}">{{ b.name }}</a></h3>
+		<p>ISBN: {{ b.isbn }}</p>
+		<p>Created On: {{ b.createdOn | date }}</p>
+	</li>
+</ul>
